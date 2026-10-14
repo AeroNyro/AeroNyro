@@ -1,0 +1,38 @@
+name: Refresh flight data
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day at 03:17 UTC
+  workflow_dispatch:        # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build SVGs from your GitHub profile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # optional: add a personal access token as a repo secret named PROFILE_TOKEN
+          # to include private contributions in the counts
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: node scripts/build.mjs "${{ github.repository_owner }}"
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || git commit -m "chore: refresh flight data"
+          git push
