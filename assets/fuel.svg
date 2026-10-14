@@ -26,28 +26,12 @@
       <text x="40" y="16" font-size="10" fill="#7a6430" text-anchor="middle">F</text>
     </g>
   </defs>
-  <g transform="translate(78,150)">
-    <use href="#dial"/>
-    <path d="M-44 0 A44 44 0 0 1 13.6 -41.8" fill="none" stroke="#3178c6" stroke-width="8" stroke-linecap="round"/>
-    <g transform="rotate(18.0)"><line class="needle" style="--from:-108.0deg;animation-delay:0s, 1.6s" x1="0" y1="0" x2="0" y2="-38" stroke="#ffb000" stroke-width="2.5" stroke-linecap="round"/></g>
-    <circle r="5" fill="#ffb000"/>
-    <text y="40" class="pct" fill="#3178c6">60%</text>
-    <text y="60" class="lbl">TypeScript</text>
-  </g>
   <g transform="translate(210,150)">
     <use href="#dial"/>
-    <path d="M-44 0 A44 44 0 0 1 -30.1 -32.1" fill="none" stroke="#3572A5" stroke-width="8" stroke-linecap="round"/>
-    <g transform="rotate(-43.2)"><line class="needle" style="--from:-46.8deg;animation-delay:0.25s, 1.85s" x1="0" y1="0" x2="0" y2="-38" stroke="#ffb000" stroke-width="2.5" stroke-linecap="round"/></g>
+    <path d="M-44 0 A44 44 0 0 1 44.0 -0.0" fill="none" stroke="#f1e05a" stroke-width="8" stroke-linecap="round"/>
+    <g transform="rotate(90.0)"><line class="needle" style="--from:-180.0deg;animation-delay:0s, 1.6s" x1="0" y1="0" x2="0" y2="-38" stroke="#ffb000" stroke-width="2.5" stroke-linecap="round"/></g>
     <circle r="5" fill="#ffb000"/>
-    <text y="40" class="pct" fill="#3572A5">26%</text>
-    <text y="60" class="lbl">Python</text>
-  </g>
-  <g transform="translate(342,150)">
-    <use href="#dial"/>
-    <path d="M-44 0 A44 44 0 0 1 -42.6 -10.9" fill="none" stroke="#f1e05a" stroke-width="8" stroke-linecap="round"/>
-    <g transform="rotate(-75.6)"><line class="needle" style="--from:-14.4deg;animation-delay:0.5s, 2.1s" x1="0" y1="0" x2="0" y2="-38" stroke="#ffb000" stroke-width="2.5" stroke-linecap="round"/></g>
-    <circle r="5" fill="#ffb000"/>
-    <text y="40" class="pct" fill="#f1e05a">8%</text>
+    <text y="40" class="pct" fill="#f1e05a">100%</text>
     <text y="60" class="lbl">JavaScript</text>
   </g>
 </svg>
