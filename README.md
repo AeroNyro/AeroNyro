@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://x.com/YOUR_X_HANDLE"><img src="https://img.shields.io/badge/@YOUR__X__HANDLE-0b0b0b?style=for-the-badge&logo=x&logoColor=ffb000&labelColor=0b0b0b&color=0b0b0b" alt="X"/></a>
+  <a href="https://x.com/AeroNyro"><img src="https://img.shields.io/badge/@AeroNyro-0b0b0b?style=for-the-badge&logo=x&logoColor=ffb000&labelColor=0b0b0b&color=0b0b0b" alt="X"/></a>
 </p>
 
 <p align="center">
